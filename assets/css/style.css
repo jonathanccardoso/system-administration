@@ -1,0 +1,47 @@
+/*
+	Theme Name: System Administration
+	Theme URI: https://jonathanccardoso.github.io/
+	Description: System Administration
+	Author: Jonathan Cardoso
+	Author URI: https://jonathanccardoso.github.io/
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	box-sizing: border-box;
+}
+body {
+	overflow-x: hidden;
+}
+
+p, span {
+    font-size: 16px;
+    line-height: 1.5;
+}
+h1, h2, h3, h4, h5 {
+    font-family: Oswald,sans-serif;
+    font-weight: 400;
+}
+
+#footer {
+	background-color: #22313F;
+	color: white;
+}
+#footer p {
+   	font-size: 15px;
+}
+#footer a {
+	color: white;
+}
+.row-nav{
+	background-color: #22313f;
+	color: white;
+}
+a{
+	color: white;
+}
+a:hover{
+	background-color: white;
+}
