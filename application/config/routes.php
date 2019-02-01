@@ -57,5 +57,3 @@ $route['empresa'] = 'index/empresa';
 $route['colaborador'] = 'index/colaborador';
 $route['empresa_cadastrar'] = 'index/empresa_cadastrar';
 $route['colaborador_cadastrar'] = 'index/colaborador_cadastrar';
-
-
