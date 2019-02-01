@@ -52,3 +52,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'index';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+
+$route['empresa'] = 'index/empresa';
+$route['colaborador'] = 'index/colaborador';
+$route['empresa_cadastrar'] = 'index/empresa_cadastrar';
+$route['colaborador_cadastrar'] = 'index/colaborador_cadastrar';
+
+
