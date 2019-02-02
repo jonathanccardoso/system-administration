@@ -28,6 +28,11 @@ h1, h2, h3, h4, h5 {
 #footer {
 	background-color: #22313F;
 	color: white;
+
+	position: relative;
+	width: 100%;
+    margin: auto;
+    bottom: 0;
 }
 #footer p {
    	font-size: 15px;
@@ -44,4 +49,8 @@ a{
 }
 a:hover{
 	background-color: white;
+}
+
+button.btn.btn-success a :hover{
+	
 }

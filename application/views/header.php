@@ -24,13 +24,20 @@
             <li class="nav-item">
               <a class="nav-link" href="<?php echo base_url('colaborador'); ?>">Colaboradores</a>
             </li>
-            <li class="nav-item dropdown ml-md-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown">Relatórios</a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                 <a class="dropdown-item" href="<?php echo base_url('empresas_relatorio'); ?>">Empresas</a> 
+                 <a class="dropdown-item" href="<?php echo base_url('colaboradores_relatorio'); ?>">Colaboradores</a>
+              </div>
+            </li>
+            <!--<li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown">Cadastro</a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
                  <a class="dropdown-item" href="<?php echo base_url('empresa_cadastrar'); ?>">Empresa</a> 
                  <a class="dropdown-item" href="<?php echo base_url('colaborador_cadastrar'); ?>">Colaborador</a>
               </div>
-            </li>
+            </li>-->
           </ul>
         </div>
       </div>

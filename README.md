@@ -17,6 +17,9 @@
 
 <!--
 
+ - Arquivos mais usados:
+   - routes, controllers, models e views.
+
  [gerar pdf](https://www.youtube.com/watch?v=bpO3-7fMZws)
  [banco de dados - só retornar um campo](#) 
 
@@ -81,5 +84,10 @@ references empresa(id_empresa);
 update colaboradores set id_empresa = '6' where id='1';
 //6 - id da empresa
 //1 - id do colaborador
+
+++
+INSERT INTO `empresa`(`id_empresa`, `nome`, `cnpj`, `email`) VALUES ('2','Tech','36.615.274/0001-89','contato@tech.com.br')
+
+INSERT INTO `colaborador`(`id_colaborador`, `email`, `nome`, `cpf`, `sexo`, `empresa_id`) VALUES ('2','contato@eduarda.com.br','Eduarda Lima', '647.355.750-57','F','1')
 
 -->
