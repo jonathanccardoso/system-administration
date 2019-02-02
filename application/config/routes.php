@@ -54,14 +54,14 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 $route['empresa'] = 'index/empresa';
-$route['empresa_visualizar/(:num)'] = 'empresas/visualizar/$1';
-$route['empresa_cadastrar'] = 'index/empresa_cadastrar';
-$route['empresa_editar/(:num)'] = 'empresas/atualizar/$1';
-$route['empresa_excluir/(:num)'] = 'empresas/deletar/$1';
-
+$route['empresa/visualizar/(:num)'] = 'empresas/visualizar/$1';
+$route['empresa/cadastrar'] = 'index/empresa_cadastrar';
+$route['empresa/editar/(:num)'] = 'empresas/atualizar/$1';
+$route['empresa/excluir/(:num)'] = 'empresas/deletar/$1';
+$route['empresa/relatorio'] = 'empresas/relatorio';
 
 $route['colaborador'] = 'index/colaborador';
-$route['colaborador_visualizar/(:num)'] = 'colaboradores/visualizar/$1';
-$route['colaborador_cadastrar'] = 'index/colaborador_cadastrar';
-$route['colaborador_editar/(:num)'] = 'colaboradores/atualizar/$1';
-$route['colaborador_excluir/(:num)'] = 'colaboradores/deletar/$1';
+$route['colaborador/visualizar/(:num)'] = 'colaboradores/visualizar/$1';
+$route['colaborador/cadastrar'] = 'index/colaborador_cadastrar';
+$route['colaborador/editar/(:num)'] = 'colaboradores/atualizar/$1';
+$route['colaborador/excluir/(:num)'] = 'colaboradores/deletar/$1';

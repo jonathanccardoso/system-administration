@@ -4,7 +4,7 @@
 		<div class="container">
 			<div class="col-md-12">
 				<h1>Colaboradores</h1>
-				<a href="<?php echo base_url("colaborador_cadastrar"); ?>" class="btn btn-sucess m-1" style="background-color: green;color: white;" role="button aria-pressed="true">Adicionar Colaborador</a>
+				<a href="<?php echo base_url("colaborador/cadastrar"); ?>" class="btn btn-sucess m-1" style="background-color: green;color: white;" role="button aria-pressed="true">Adicionar Colaborador</a>
 				<table class="table table-bordered table-hover mt-4">
 					<thead>
 						<tr>
@@ -29,9 +29,9 @@
 										"<td>". $line->cpf ."</td>".
 										"<td>". $line->sexo ."</td>".
 										"<td>".	
-											"<a href='colaborador_visualizar/". $line->id_colaborador ."' class='btn btn-primary m-1' role='button aria-pressed='true'>Visualizar</a>".
-											"<a href='colaborador_editar/". $line->id_colaborador ."' class='btn btn-warning m-1' role='button aria-pressed='true'>Editar</a>".
-											"<a href='colaborador_excluir/". $line->id_colaborador ."' class='btn btn-danger m-1' role='button aria-pressed='true'>Excluir</a>".
+											"<a href='colaborador/visualizar/". $line->id_colaborador ."' class='btn btn-primary m-1' role='button aria-pressed='true'>Visualizar</a>".
+											"<a href='colaborador/editar/". $line->id_colaborador ."' class='btn btn-warning m-1' role='button aria-pressed='true'>Editar</a>".
+											"<a href='colaborador/excluir/". $line->id_colaborador ."' class='btn btn-danger m-1' role='button aria-pressed='true'>Excluir</a>".
 										"</td>".										
 									"</tr>";
 							}

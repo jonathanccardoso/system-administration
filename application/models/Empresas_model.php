@@ -35,4 +35,5 @@ class Empresas_model extends CI_Model {
 	public function delete($where){
 		$this->db->delete('empresa', $where);
 	}
+
 }

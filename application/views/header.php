@@ -27,8 +27,8 @@
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown">Relatórios</a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                 <a class="dropdown-item" href="<?php echo base_url('empresas_relatorio'); ?>">Empresas</a> 
-                 <a class="dropdown-item" href="<?php echo base_url('colaboradores_relatorio'); ?>">Colaboradores</a>
+                 <a class="dropdown-item" href="<?php echo base_url('empresa/relatorio'); ?>">Empresas</a> 
+                 <a class="dropdown-item" href="<?php echo base_url('colaborador/relatorio'); ?>">Colaboradores</a>
               </div>
             </li>
             <!--<li class="nav-item dropdown">

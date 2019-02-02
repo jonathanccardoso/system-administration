@@ -112,6 +112,6 @@ class Colaboradores extends CI_Controller {
 
 		$this->Colaboradores_model->delete($where);
 
-		redirect('empresa');
+		redirect('colaborador');
 	}	
 }

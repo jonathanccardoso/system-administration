@@ -4,7 +4,7 @@
 		<div class="container">
 			<div class="col-md-12">
 				<h1>Empresas</h1>
-				<a href="<?php echo base_url("empresa_cadastrar"); ?>" class="btn btn-sucess m-1" style="background-color: green;color: white;" role="button aria-pressed="true">Adicionar Empresa</a>
+				<a href="<?php echo base_url("empresa/cadastrar"); ?>" class="btn btn-sucess m-1" style="background-color: green;color: white;" role="button aria-pressed="true">Adicionar Empresa</a>
 				<table class="table table-bordered table-hover mt-4">
 					<thead>
 						<tr>
@@ -24,9 +24,9 @@
 										"<td>". $line->cnpj ."</td>".
 										"<td>". $line->email ."</td>".
 										"<td>".
-											"<a href='empresa_visualizar/". $line->id_empresa ."' class='btn btn-primary m-1' role='button aria-pressed='true'>Visualizar</a>".
-											"<a href='empresa_editar/". $line->id_empresa ."' class='btn btn-warning m-1' role='button aria-pressed='true'>Editar</a>".
-											"<a href='empresa_excluir/". $line->id_empresa ."' class='btn btn-danger m-1' role='button aria-pressed='true'>Excluir</a>".
+											"<a href='empresa/visualizar/". $line->id_empresa ."' class='btn btn-primary m-1' role='button aria-pressed='true'>Visualizar</a>".
+											"<a href='empresa/editar/". $line->id_empresa ."' class='btn btn-warning m-1' role='button aria-pressed='true'>Editar</a>".
+											"<a href='empresa/excluir/". $line->id_empresa ."' class='btn btn-danger m-1' role='button aria-pressed='true'>Excluir</a>".
 										"</td>".										
 									"</tr>";
 							}

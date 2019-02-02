@@ -3,7 +3,7 @@
 	<div class="row">
 		<div class="container">
 			<div class="col-md-12">
-				<h1>Editar Empresa</h1>
+				<h1>Editar Colaborador</h1>
 
 				<?php 
 					echo form_open('colaboradores/update'); //action
