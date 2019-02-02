@@ -6,7 +6,8 @@
 
 * [CodeIgniter](https://www.codeigniter.com/)
 * [Xampp](https://www.apachefriends.org/pt_br/download.html)
-* IDE [Sublime Text](https://www.sublimetext.com/3)
+* [Sublime Text](https://www.sublimetext.com/3)
+* [TCPDF](https://github.com/bcit-ci/CodeIgniter)
 
 ## Autor
 

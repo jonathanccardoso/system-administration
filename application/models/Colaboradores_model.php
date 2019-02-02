@@ -11,6 +11,13 @@ class Colaboradores_model extends CI_Model {
 		$query = $this->db->get('colaborador',100);
 		return $query->result();
 	}
+	//SELECT * FROM `colaborador` WHERE sexo = 'F'
+	public function getColaboradoresSexo(){
+		$sexo="sexo";
+		$query = $this->db->where('sexo', "F");
+		$query = $this->db->get_where('colaborador');
+		return $query->result();
+	}
 
 	//update
 	public function insert(){

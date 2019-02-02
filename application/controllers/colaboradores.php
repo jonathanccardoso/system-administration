@@ -114,4 +114,48 @@ class Colaboradores extends CI_Controller {
 
 		redirect('colaborador');
 	}	
+
+	//relatorio PDF
+	public function relatorio(){
+		$this->load->model('Colaboradores_model');
+	
+		//$table = $this->Colaboradores_model->getColaboradores();
+		$table = $this->Colaboradores_model->getColaboradoresSexo();
+
+		$dados = array(
+			'title' => 'Relatório Empresas', 
+			'table' => $table
+		);
+
+		$this->load->view('colaborador/relatorio', $dados);	
+
+		/*		
+		$this->load->model('Colaboradores_model');
+
+		$sexo = "F";
+		$where = array('sexo'=>$sexo);
+
+		$resultado = $this->Colaboradores_model->getColaboradoresSexo($where);
+
+		$dados = array(
+			'title' => 'Relatório Colaboradores',
+			'sexo' => $sexo,
+			'table'=>$resultado
+		);
+
+		$this->load->view('colaborador/relatorio', $dados);*/
+	}
+	public function pdf(){
+		$this->load->model('Colaboradores_model', 'colaboradores');
+	
+		$table = $this->colaboradores->getColaboradoresSexo();
+
+		$data = array(
+			'title' => 'Relatório Colaboradores',
+			'table' => $table
+		);
+
+		$this->load->library('Pdf');
+		$this->load->view('colaborador/pdf', $data);
+	}
 }

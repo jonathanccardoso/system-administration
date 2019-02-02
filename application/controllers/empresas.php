@@ -129,16 +129,16 @@ class Empresas extends CI_Controller {
 		$this->load->view('empresa/relatorio', $dados);	
 	}
 	public function pdf(){
-		
-		/*if($this->uri->segment(3)){
-		   $customer_id = $this->uri->segment(3);
-		   $html_content = '<h3 align="center">Convert HTML to PDF in CodeIgniter using Dompdf</h3>';
-		   $html_content .= $this->htmltopdf_model->fetch_single_details($customer_id);
-		   $this->pdf->loadHtml($html_content);
-		   $this->pdf->render();
-		   $this->pdf->stream("".$customer_id.".pdf", array("Attachment"=>0));
-		}*/
+		$this->load->model('Empresas_model', 'empresas');
+	
+		$table = $this->empresas->getEmpresas();
 
-		//redirect('empresa/relatorio');
+		$data = array(
+			'title' => 'Relatório Empresas',
+			'table' => $table
+		);
+
+		$this->load->library('Pdf');
+		$this->load->view('empresa/pdf', $data);
 	}
 }

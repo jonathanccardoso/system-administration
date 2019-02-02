@@ -31,13 +31,6 @@
                  <a class="dropdown-item" href="<?php echo base_url('colaborador/relatorio'); ?>">Colaboradores</a>
               </div>
             </li>
-            <!--<li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown">Cadastro</a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                 <a class="dropdown-item" href="<?php echo base_url('empresa_cadastrar'); ?>">Empresa</a> 
-                 <a class="dropdown-item" href="<?php echo base_url('colaborador_cadastrar'); ?>">Colaborador</a>
-              </div>
-            </li>-->
           </ul>
         </div>
       </div>

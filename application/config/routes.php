@@ -59,9 +59,12 @@ $route['empresa/cadastrar'] = 'index/empresa_cadastrar';
 $route['empresa/editar/(:num)'] = 'empresas/atualizar/$1';
 $route['empresa/excluir/(:num)'] = 'empresas/deletar/$1';
 $route['empresa/relatorio'] = 'empresas/relatorio';
+$route['empresa/relatorio/pdf'] = 'empresas/pdf';
 
 $route['colaborador'] = 'index/colaborador';
 $route['colaborador/visualizar/(:num)'] = 'colaboradores/visualizar/$1';
 $route['colaborador/cadastrar'] = 'index/colaborador_cadastrar';
 $route['colaborador/editar/(:num)'] = 'colaboradores/atualizar/$1';
 $route['colaborador/excluir/(:num)'] = 'colaboradores/deletar/$1';
+$route['colaborador/relatorio'] = 'colaboradores/relatorio/';
+$route['colaborador/relatorio/pdf'] = 'colaboradores/pdf';
