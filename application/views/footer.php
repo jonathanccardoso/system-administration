@@ -1,4 +1,3 @@
-
 	<footer class="row p-3 mt-2" id="footer">
 		<div class="container">
 			<p class="float-left mt-3"><b>© 2018 System Administration.</b> All rights reserved.</p>

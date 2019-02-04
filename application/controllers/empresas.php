@@ -20,7 +20,7 @@ class Empresas extends CI_Controller {
 		$this->load->view('empresa/listar', $dados);
 	}
 
-	//visualizar - estrutura semelhante ao atualizar
+	//Estrutura semelhante ao atualizar()
 	public function visualizar($id){
 		$this->load->model('Empresas_model');
 
@@ -38,11 +38,11 @@ class Empresas extends CI_Controller {
 	}
 
 	public function cadastrar(){
-		//model
 		$this->load->model('Empresas_model');
 		$this->Empresas_model->insert();
 
-		redirect('/empresa');//possivel através do helper url
+		//helper url
+		redirect('/empresa');
 	}
 
 	//UPDATE
@@ -115,7 +115,7 @@ class Empresas extends CI_Controller {
 		redirect('empresa');
 	}	
 
-	//relatorio PDF
+	//Relatorio PDF
 	public function relatorio(){
 		$this->load->model('Empresas_model');
 	

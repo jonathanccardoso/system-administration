@@ -8,7 +8,7 @@ class BaseController extends CI_Model {
 	}
 
 	public function salvar(){
-		//errado
+		//teste
 		echo 'executado metodo model';
 	}
 }

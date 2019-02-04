@@ -33,8 +33,8 @@ class Colaboradores extends CI_Controller {
 		$this->load->view('colaborador/visualizar', $dados);
 	}
 
+	//INSERT
 	public function cadastrar(){
-		//model
 		$this->load->model('Colaboradores_model');
 		$this->Colaboradores_model->insert();
 
@@ -115,7 +115,7 @@ class Colaboradores extends CI_Controller {
 		redirect('colaborador');
 	}	
 
-	//relatorio PDF
+	//Relatorio PDF
 	public function relatorio(){
 		$this->load->model('Colaboradores_model');
 	
@@ -127,23 +127,7 @@ class Colaboradores extends CI_Controller {
 			'table' => $table
 		);
 
-		$this->load->view('colaborador/relatorio', $dados);	
-
-		/*		
-		$this->load->model('Colaboradores_model');
-
-		$sexo = "F";
-		$where = array('sexo'=>$sexo);
-
-		$resultado = $this->Colaboradores_model->getColaboradoresSexo($where);
-
-		$dados = array(
-			'title' => 'Relatório Colaboradores',
-			'sexo' => $sexo,
-			'table'=>$resultado
-		);
-
-		$this->load->view('colaborador/relatorio', $dados);*/
+		$this->load->view('colaborador/relatorio', $dados);
 	}
 	public function pdf(){
 		$this->load->model('Colaboradores_model', 'colaboradores');

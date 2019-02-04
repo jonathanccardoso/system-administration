@@ -4,9 +4,10 @@
 		<div class="container">
 			<div class="col-md-6">
 				<h1>Cadastrar empresa</h1>
-				<!-- para form usa o helper form -->
 
-				<?php echo form_open('empresas/cadastrar'); ?> <!--<form role="form">-->
+				<!-- helper form -->
+				<?php echo form_open('empresas/cadastrar'); ?> <!-- <form role="form"> -->
+
 					<div class="form-group">
 						<label for="nome">Nome</label>
 						<input type="text" class="form-control" id="nome" name="nome" required/>

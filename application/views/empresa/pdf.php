@@ -20,17 +20,17 @@
 					</thead>
 					<tbody>';
 
-			foreach($table as $line) {
-			    $html .= '<tr>
-			        <td>' . $line->nome . '</td>
-			        <td>' . $line->cnpj . '</td>
-			    </tr>';
-			}
+					foreach($table as $line) {
+					    $html .= '<tr>
+					        <td>' . $line->nome . '</td>
+					        <td>' . $line->cnpj . '</td>
+					    </tr>';
+					}
 
 			$html .= '</tbody>
 				</table>';
 
 	$pdf->writeHTML($html, true, false, true, false, '');
 
-	$pdf->Output('Relatorio-Empresa.pdf', 'I');
+	$pdf->Output('Relatorio-Empresas.pdf', 'I');
 ?>

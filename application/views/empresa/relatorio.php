@@ -3,7 +3,7 @@
 	<div class="row">
 		<div class="container">
 			<div class="col-md-12">
-				<h1>Empresas</h1>
+				<h1>Relatório empresas</h1>
 				<a href="<?php echo base_url("empresa/relatorio/pdf"); ?>" class="btn btn-sucess m-1" style="background-color: green;color: white;" role="button aria-pressed="true">Gerar PDF</a>
 
 					<table class="table table-bordered table-hover mt-4">

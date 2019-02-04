@@ -5,9 +5,9 @@
 ## Ambiente
 
 * [CodeIgniter](https://www.codeigniter.com/)
+* [TCPDF](https://github.com/bcit-ci/CodeIgniter)
 * [Xampp](https://www.apachefriends.org/pt_br/download.html)
 * [Sublime Text](https://www.sublimetext.com/3)
-* [TCPDF](https://github.com/bcit-ci/CodeIgniter)
 
 ## Autor
 
@@ -19,12 +19,9 @@
 <!--
 
  - Arquivos mais usados:
-   - routes, controllers, models e views.
+ - routes, controllers, models e views.
 
- [gerar pdf](https://www.youtube.com/watch?v=bpO3-7fMZws)
- [banco de dados - só retornar um campo](#) 
-
- ## Diretórios
+## Diretórios
 
 - /user_guide - apagar apos a produção
 - /system - o nucleo do sistema (nunca mexer)

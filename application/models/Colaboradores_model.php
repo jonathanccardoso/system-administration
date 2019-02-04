@@ -13,13 +13,14 @@ class Colaboradores_model extends CI_Model {
 	}
 	//SELECT * FROM `colaborador` WHERE sexo = 'F'
 	public function getColaboradoresSexo(){
-		$sexo="sexo";
+		$sexo = "sexo";
 		$query = $this->db->where('sexo', "F");
 		$query = $this->db->get_where('colaborador');
+
 		return $query->result();
 	}
 
-	//update
+	//UPDATE
 	public function insert(){
 		$data = array(
 			'nome'=>$_POST['nome'],
@@ -40,7 +41,7 @@ class Colaboradores_model extends CI_Model {
 		$this->db->update('colaborador', $dados, $where);
 	}
 
-	//delete
+	//DELETE
 	public function delete($where){
 		$this->db->delete('colaborador', $where);
 	}

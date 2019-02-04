@@ -6,7 +6,7 @@
 				<h1>Editar Colaborador</h1>
 
 				<?php 
-					echo form_open('colaboradores/update'); //action
+					echo form_open('colaboradores/update');
 				 ?>
 				 	
 				 	<input type="hidden" name="id_colaborador" value="<?php echo $table[0]->id_colaborador; ?>">

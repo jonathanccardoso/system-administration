@@ -13,21 +13,19 @@ class BaseController extends CI_Controller {
 		//teria que chamar o view()
 
 		//passar parametros
-		$dados['titulo']  = 'o ovo';
-		$dados['conteudo']  = 'o ovo ovinhho';
+		
+		//$dados['titulo']  = 'o ovo';
+		//$dados['conteudo']  = 'o ovo ovinhho';
 
-		$this->load->view('exemplo1', $dados);
+		//$this->load->view('exemplo1', $dados);
 	}
 
 	public function login()	{
-		//errado
-		echo 'executado metodo login do controller';
-		
 		//id da url
 		//echo $this->uri->segment(3);
 
 		//metodo salvar do model
-		$this->Base_model->salvar();
+		//$this->Base_model->salvar();
 		//Base_controller/login
 	}
 }

@@ -4,7 +4,7 @@
 	$pdf->SetHeaderMargin(30);
 	$pdf->SetTopMargin(20);
 	$pdf->setFooterMargin(20);
-	//$pdf->SetAutoPageBreak(true);
+	$pdf->SetAutoPageBreak(true);
 	$pdf->SetAuthor('System Codeigniter');
 	$pdf->SetDisplayMode('real', 'default');
 
@@ -22,19 +22,19 @@
 					</thead>
 					<tbody>';
 
-			foreach($table as $line) {
-			    $html .= '<tr>
-			        <td>' . $line->nome . '</td>
-			        <td>' . $line->email . '</td>
-			        <td>' . $line->cpf . '</td>
-			        <td>' . $line->sexo . '</td>
-			    </tr>';
-			}
+					foreach($table as $line) {
+					    $html .= '<tr>
+					        <td>' . $line->nome . '</td>
+					        <td>' . $line->email . '</td>
+					        <td>' . $line->cpf . '</td>
+					        <td>' . $line->sexo . '</td>
+					    </tr>';
+					}
 
 			$html .= '</tbody>
 				</table>';
 
 	$pdf->writeHTML($html, true, false, true, false, '');
 
-	$pdf->Output('Relatorio-Colaborador.pdf', 'I');
+	$pdf->Output('Relatorio-Colaboradores.pdf', 'I');
 ?>

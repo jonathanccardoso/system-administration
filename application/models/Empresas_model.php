@@ -9,10 +9,11 @@ class Empresas_model extends CI_Model {
 
 	public function getEmpresas(){
 		$query = $this->db->get('empresa',100);
+		
 		return $query->result();
 	}
 
-	//update
+	//UPDATE
 	public function insert(){
 		$data = array(
 			'nome'=>$_POST['nome'],
@@ -31,7 +32,7 @@ class Empresas_model extends CI_Model {
 		$this->db->update('empresa', $dados, $where);
 	}
 
-	//delete
+	//DELETE
 	public function delete($where){
 		$this->db->delete('empresa', $where);
 	}

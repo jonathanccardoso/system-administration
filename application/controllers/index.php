@@ -25,7 +25,7 @@ class Index extends CI_Controller {
 		$this->load->view('empresa/listar', $dados);
 	}
 	public function colaborador() {
-		//list datas table
+		//list data table
 		$this->load->model('colaboradores_model', 'colaboradores');
 	
 		$table = $this->colaboradores->getColaboradores();
@@ -58,6 +58,3 @@ class Index extends CI_Controller {
 		$this->load->view('colaborador/cadastrar', $dados);
 	}
 }
-
-
-
