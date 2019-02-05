@@ -20,7 +20,7 @@
 						<label for="email">Email</label>
 						<input type="email" class="form-control" id="email" name="email" required/>
 					</div>
-					<button type="submit" class="btn btn-primary">Enviar</button>
+					<button type="submit" class="btn btn-primary">Cadastrar</button>
 				</form>
 
 			</div>

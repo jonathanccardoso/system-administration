@@ -31,7 +31,7 @@
 						<label for="nome">ID Empresa</label>
 						<input type="text" class="form-control" id="empresa_id" name="empresa_id" value="<?php echo $table[0]->empresa_id ?>" required/>
 					</div>
-					<button type="submit" class="btn btn-primary">Enviar</button>
+					<button type="submit" class="btn btn-primary">Editar</button>
 				</form>
 
 			</div>

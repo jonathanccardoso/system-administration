@@ -29,7 +29,7 @@
 						<label for="nome">ID Empresa</label>
 						<input type="text" class="form-control" id="empresa_id" name="empresa_id" required/>
 					</div>
-					<button type="submit" class="btn btn-primary">Enviar</button>
+					<button type="submit" class="btn btn-primary">Cadastrar</button>
 				</form>
 
 			</div>

@@ -123,7 +123,7 @@ class Colaboradores extends CI_Controller {
 		$table = $this->Colaboradores_model->getColaboradoresSexo();
 
 		$dados = array(
-			'title' => 'Relatório Empresas', 
+			'title' => 'Relatório Colaboradores', 
 			'table' => $table
 		);
 

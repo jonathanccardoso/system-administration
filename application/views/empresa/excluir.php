@@ -23,7 +23,7 @@
 						<label for="email">Email</label>
 						<input type="email" class="form-control" id="email" name="email" value="<?php echo $table[0]->email ?>" required/>
 					</div>
-					<button type="submit" class="btn btn-primary">Deletar</button>
+					<button type="submit" class="btn btn-primary">Excluir</button>
 				</form>
 
 			</div>
